@@ -1,0 +1,22 @@
+[project]
+name = "reconocimiento-senas-cnn"
+version = "0.2.0"
+description = "Reconocimiento de senas estaticas con una CNN entrenada desde cero"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+    "matplotlib>=3.8,<4",
+    "numpy>=1.26,<3",
+    "opencv-python>=4.9,<5",
+    "Pillow>=10,<13",
+    "PySide6>=6.6,<7",
+    "scikit-learn>=1.4,<2",
+    "torch>=2.0,<3",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
